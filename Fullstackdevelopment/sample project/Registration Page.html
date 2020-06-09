@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Registration
+  </title>
+  <link rel="shortcut icon" href="gitam.jpg" />
+  <link href="p3.css" rel="StyleSheet" />
+  <script src="p1.js"></script>
+</head>
+<body >
+  <div class="i2">
+    <img src="excellence.png" width="105px" height="105px" />
+  </div>
+  <div class="a1">
+    <img src="GITAM-logo.png">
+  </div>
+  <ul class="u2">
+    <a href="Home.html" target="_blank"><li>Home</li></a>
+    <a href="About Us.html" target="_blank"><li>About Us</li></a>
+    <a href="Contact Us.html" target="_blank"><li>Contact Us</li></a>
+    <a href="Login.html" target="_blank"><li>Login</li></a>
+    <a href="Feedback Details.html" target="_blank"><li>Feedback</li></a>
+    <a href="Registration Page.html" target="_blank"><li>Registration</li></a>
+  </ul>
+  <h2>Registration page</h2>
+  <form method="post" target="#" onsubmit="return validate()" id="f1">
+    <p align="center">
+      <b>Register for Gitam account so that you can access the student resources</b>
+    </p>
+    <table  align="center">
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" id="us"/></td>
+      </tr>
+      <tr>
+        <td>Id:</td>
+        <td><input type="number" id="idd" /></td>
+      </tr>
+      <tr>
+        <td>Date Of Birth:</td>
+        <td><input type="text" id="dt" placeholder="write in a format of DD/MM/YYYY" /></td>
+      </tr>
+      <tr>
+        <td>Year Of Joining:</td>
+        <td><input type="number" id="jd" /></td>
+      </tr>
+      <tr>
+        <td>Year of Passing out:</td>
+        <td><input type="number" id="pd" /></td>
+      </tr>
+      <tr>
+        <td>Branch:</td>
+          <td><select align="right">
+              <option value="-1" selected>select..</option>
+              <option>CSE</option>
+              <option>ECE</option>
+              <option>MECH</option>
+              <option>EEE</option>
+              <option>CIVIL</option>
+              
+            </select> 
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile Number:</td>
+        <td><input type="number" id="ph" /></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" name="email" id="em" /></td>
+      </tr>
+      <tr>
+        <td>Retype email:</td>
+        <td><input type="text" name="retype_email" id="rem" /></td>
+      </tr>
+      <tr>
+        <td>Create a password:</td>
+        <td><input type="password" name="password" id="ps" /></td>
+      </tr>
+      <tr>
+        <td>Retype password:</td>
+          <td><input type="password" name="retype_password" id="rps" /></td>
+      </tr>
+    </table>
+    <div align="center">
+       <p><input type="checkbox" name="terms" id="cb" />By clicking on to this you agree to our<a href="#service">Terms of Service and <a href="#policy">Privacy Policy</a></a></p>
+                        
+    </div>
+    <div class="button" align="center">
+      <input type="submit" class="button" value="Set Up Account" />
+      <input type="button" onclick="myFunction()" value="clear" />
+    </div>
+</body>
